@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #3878d6, #00a0f2, #00c3f2, #00e3db, #4ffdb9);
+}
+
+.heading{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: #48e828;
+    background-image: linear-gradient(to right, #320537, #660046, #9b0046, #ca0037, #eb3d12);
+}
+
+.form{
+    color: #fff;
+    margin: 50px 0 0 110px;
+    float: left;
+    font-size: 20px; 
+    padding: 3rem;
+    align-items: center;
+    background: #320537;
+    border-radius: 30px;
+}
+
+.form input{
+    margin: 10px;
+    padding:5px;  
+    border-radius: 5px;
+}
+
+.container .form .input_field{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.container .form .input_field label{
+    width: 250px;
+}
+
+.btn{
+    background: #25df24e3;
+    border-radius: 5px;
+    padding:  4px 10px ;
+    margin-left: 150px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+ 
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background:#138813e3;
+    color: #fff;
+}
+
+
+.vl {
+    margin-top: 20px;
+    border-left: 4px solid #000;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.table{
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;   
+    margin-left: 55%;
+    margin-top: 10%;
+}
+
+.show{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; 
+    transition: all 0.3s ease;
+}
+
+td, th{
+    border: 2px solid black;
+    text-align: left;
+    padding: 8px;
+    
+}
+
+tbody{
+    padding: 20px;
+}

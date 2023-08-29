@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student enrollment system</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Student Enrollment Form</h1>
+      </div>
+
+      <div class="form">
+        <div class="input_field">
+          <label>Enter your name: </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Ex.- John Doe"
+            required
+          /><br />
+        </div>
+
+        <div class="input_field">
+          <label>Enter your Email-id: </label>
+          <input
+            type="email"
+            name="email"
+            id="mail"
+            placeholder="Ex.- john@mail.com"
+            required
+          /><br />
+        </div>
+        <div class="input_field">
+          <label>Enter your age: </label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Ex.- 10"
+            required
+          /><br />
+        </div>
+        <div class="input_field">
+          <label>Enter your Website: </label>
+          <input type="url" name="web" id="web" required /><br />
+        </div>
+        <div class="input_field">
+          <label>Upload profile photo: </label>
+          <input type="file" name="img" id="img" required /><br />
+        </div>
+
+        <div class="gender_button">
+          <label>Choose your desired gender: </label><br />
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label><br />
+
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+        </div>
+
+        <div class="skills_options">
+            <label>Choose your desired skills: </label><br />
+          <input type="checkbox" id="reading" name="skills" value="java" />
+          <label for="java">Java</label>
+
+          <input type="checkbox" id="html" name="skills" value="html" />
+          <label for="html">HTML</label>
+
+          <input type="checkbox" id="css" name="skills" value="css" />
+          <label for="css">CSS</label>
+
+          <input type="checkbox" id="javascript" name="skills" value="javascript" />
+          <label for="javascript">Javascript</label>
+        </div>
+
+        <button id="btn" class="btn">Enroll Student</button>
+      </div>
+
+      <!-- <div class="vl"></div> -->
+
+      <div class="table">
+        <table id="display" class="show">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email-id</th>
+              <th>Age</th>
+              <th>Website Link</th>
+              <th>Profile Photo Path</th>
+              <th>Gender</th>
+              <th>Skills</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
