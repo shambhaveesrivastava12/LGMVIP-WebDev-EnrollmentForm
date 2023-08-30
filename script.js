@@ -9,12 +9,15 @@ function displayDetails(){
 	var age = document.getElementById("age").value;
 	var web= document.getElementById("web").value;
 	var img = document.getElementById("img").value;
-	var male = document.getElementById("male").value;
+	var gender = document.querySelector('input[name="gender"]:checked');
+	var skillsArray = document.querySelectorAll('input[name="skills"]:checked');
 
-	if(!name || !mail || !age || !web || !img  ){
+	if(!name || !mail || !age || !web || !img || !gender ||skillsArray.length===0){
 		alert("please fill all the details");
 		return;
 	}
+
+	var skills = Array.from(skillsArray).map(skill => skill.value).join(", ");
 
 	var display = document.getElementById("display");
 
@@ -25,7 +28,8 @@ function displayDetails(){
 	var cell3 = newRow.insertCell(2);
 	var cell4 = newRow.insertCell(3);
 	var cell5 = newRow.insertCell(4);
-	// var cell6 = newRow.insertCell(5);
+	var cell6 = newRow.insertCell(5);
+	var cell7 = newRow.insertCell(6);
 
 
 	cell1.innerHTML = name;	
@@ -33,7 +37,9 @@ function displayDetails(){
 	cell3.innerHTML = age;	
 	cell4.innerHTML = web;	
 	cell5.innerHTML = img;	
-	// cell6.innerHTML = skills;	
+	cell6.innerHTML = gender.value;	
+	cell7.innerHTML = skills;	
+		
 
 	row++;
 }
